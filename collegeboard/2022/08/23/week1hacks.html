@@ -8,17 +8,17 @@
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Week 1 Hacks" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Primitives and wrapper Classes" />
-<meta property="og:description" content="Primitives and wrapper Classes" />
-<link rel="canonical" href="https://xiaoa0.github.io/fastpages_test/jupyter/2022/08/23/week1hacks.html" />
-<meta property="og:url" content="https://xiaoa0.github.io/fastpages_test/jupyter/2022/08/23/week1hacks.html" />
+<meta name="description" content="Primitives" />
+<meta property="og:description" content="Primitives" />
+<link rel="canonical" href="https://xiaoa0.github.io/fastpages_test/collegeboard/2022/08/23/week1hacks.html" />
+<meta property="og:url" content="https://xiaoa0.github.io/fastpages_test/collegeboard/2022/08/23/week1hacks.html" />
 <meta property="og:site_name" content="fastpages" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-08-23T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Week 1 Hacks" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-08-23T00:00:00-05:00","datePublished":"2022-08-23T00:00:00-05:00","description":"Primitives and wrapper Classes","headline":"Week 1 Hacks","mainEntityOfPage":{"@type":"WebPage","@id":"https://xiaoa0.github.io/fastpages_test/jupyter/2022/08/23/week1hacks.html"},"url":"https://xiaoa0.github.io/fastpages_test/jupyter/2022/08/23/week1hacks.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-08-23T00:00:00-05:00","datePublished":"2022-08-23T00:00:00-05:00","description":"Primitives","headline":"Week 1 Hacks","mainEntityOfPage":{"@type":"WebPage","@id":"https://xiaoa0.github.io/fastpages_test/collegeboard/2022/08/23/week1hacks.html"},"url":"https://xiaoa0.github.io/fastpages_test/collegeboard/2022/08/23/week1hacks.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/fastpages_test/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://xiaoa0.github.io/fastpages_test/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/fastpages_test/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -73,7 +73,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Week 1 Hacks</h1><p class="page-description">Primitives and wrapper Classes</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-08-23T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Week 1 Hacks</h1><p class="page-description">Primitives</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-08-23T00:00:00-05:00" itemprop="datePublished">
         Aug 23, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -86,7 +86,7 @@ window.onload = wrap_img;
     
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
-        <a class="category-tags-link" href="/fastpages_test/categories/#jupyter">jupyter</a>
+        <a class="category-tags-link" href="/fastpages_test/categories/#CollegeBoard">CollegeBoard</a>
         
       
       </p>
@@ -141,6 +141,10 @@ window.onload = wrap_img;
 <li>Primitives (booleans, characters) are fixed (defined by the language)</li>
 <li>Non-primitives (wrapper classes) store functions (methods) and objects</li>
 </ul>
+<hr />
+<ul>
+<li>Examples: wrappers are uppercase, primitives are lowercase</li>
+</ul>
 
 </div>
 </div>
@@ -152,15 +156,14 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">DefinePrimitives</span> <span class="p">{</span>
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">dataTypes</span> <span class="p">{</span>
    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-     <span class="kt">int</span> <span class="n">anInt</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
-     <span class="kt">double</span> <span class="n">aDouble</span> <span class="o">=</span> <span class="mf">89.9</span><span class="p">;</span>
-     <span class="kt">boolean</span> <span class="n">aBoolean</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="c1">// primitives are data types that are already built into the language, as opposed to complex data (matrices, etc.)</span>
+     <span class="kt">int</span> <span class="n">iInt</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+     <span class="kt">double</span> <span class="n">iDouble</span> <span class="o">=</span> <span class="mf">89.9</span><span class="p">;</span>
+     <span class="kt">boolean</span> <span class="n">iComplex</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+     <span class="n">String</span> <span class="n">iString</span> <span class="o">=</span> <span class="s">&quot;Hello world!&quot;</span><span class="p">;</span>
 
-     <span class="c1">// not primitives but essential</span>
-     <span class="n">String</span> <span class="n">aString</span> <span class="o">=</span> <span class="s">&quot;Hello, World!&quot;</span><span class="p">;</span>   <span class="c1">// wrapper class shortcut assignment</span>
-     <span class="n">String</span> <span class="n">aStringFormal</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="p">(</span><span class="s">&quot;Greetings, World!&quot;</span><span class="p">);</span>
  
      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;anInt: &quot;</span> <span class="o">+</span> <span class="n">anInt</span><span class="p">);</span>
      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;aDouble: &quot;</span> <span class="o">+</span> <span class="n">aDouble</span><span class="p">);</span>
@@ -306,7 +309,7 @@ Enter a String: 3
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/fastpages_test/jupyter/2022/08/23/week1hacks.html" hidden></a>
+</script><a class="u-url" href="/fastpages_test/collegeboard/2022/08/23/week1hacks.html" hidden></a>
 </article>
 
       </div>
