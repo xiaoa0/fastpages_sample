@@ -139,13 +139,17 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>jupyter kernelspec list
-java --version
-javac --version
+<div class=" highlight hl-java"><pre><span></span><span class="n">jupyter</span> <span class="n">kernelspec</span> <span class="n">list</span>
 
-conda --version
-conda list
-conda list <span class="p">|</span> grep jupyter
+<span class="n">java</span> <span class="o">--</span><span class="n">version</span>
+
+<span class="n">javac</span> <span class="o">--</span><span class="n">version</span>
+
+<span class="n">conda</span> <span class="o">--</span><span class="n">version</span>
+
+<span class="n">conda</span> <span class="n">list</span>
+
+<span class="n">conda</span> <span class="n">list</span> <span class="o">|</span> <span class="n">grep</span> <span class="n">jupyter</span>
 </pre></div>
 
     </div>
@@ -159,11 +163,9 @@ conda list <span class="p">|</span> grep jupyter
 
 <div class="output_subarea output_text output_error">
 <pre>
-<span class="ansi-red-intense-fg ansi-bold">Failed to start the Kernel. 
-</span>
-<span class="ansi-red-intense-fg ansi-bold">AttributeError: module &#39;pexpect&#39; has no attribute &#39;spawn&#39;. 
-</span>
-View Jupyter &lt;a href=&#39;command:jupyter.viewOutput&#39;&gt;log&lt;/a&gt; for further details.</pre>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">jupyter kernelspec</span><span class="ansi-black-intense-fg ansi-bold"> list</span>
+<span class="ansi-red-intense-fg ansi-bold">&#39;;&#39; expected</span>
+</pre>
 </div>
 </div>
 
