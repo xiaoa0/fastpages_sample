@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -140,9 +140,6 @@ window.onload = wrap_img;
 <li>Lots of data types</li>
 <li>Primitives (booleans, characters) are fixed (defined by the language)</li>
 <li>Non-primitives (wrapper classes) store functions (methods) and objects</li>
-</ul>
-<hr />
-<ul>
 <li>Examples: wrappers are uppercase, primitives are lowercase</li>
 </ul>
 
@@ -156,23 +153,24 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">dataTypes</span> <span class="p">{</span>
-   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// primitives are data types that are already built into the language, as opposed to complex data (matrices, etc.)</span>
-     <span class="kt">int</span> <span class="n">iInt</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
-     <span class="kt">double</span> <span class="n">iDouble</span> <span class="o">=</span> <span class="mf">89.9</span><span class="p">;</span>
-     <span class="kt">boolean</span> <span class="n">iComplex</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
-     <span class="n">String</span> <span class="n">iString</span> <span class="o">=</span> <span class="s">&quot;Hello world!&quot;</span><span class="p">;</span>
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">DefinePrimitives</span> <span class="p">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">anInt</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">aDouble</span> <span class="o">=</span> <span class="mf">89.9</span><span class="p">;</span>
+    <span class="kt">boolean</span> <span class="n">aBoolean</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
 
- 
-     <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;anInt: &quot;</span> <span class="o">+</span> <span class="n">anInt</span><span class="p">);</span>
-     <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;aDouble: &quot;</span> <span class="o">+</span> <span class="n">aDouble</span><span class="p">);</span>
-     <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;aBoolean: &quot;</span> <span class="o">+</span> <span class="n">aBoolean</span><span class="p">);</span>
-     <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;aString: &quot;</span> <span class="o">+</span> <span class="n">aString</span><span class="p">);</span>
-     <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;aStringFormal: &quot;</span> <span class="o">+</span> <span class="n">aStringFormal</span><span class="p">);</span>
-   <span class="p">}</span>
- <span class="p">}</span>
- <span class="n">DefinePrimitives</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+    <span class="c1">// not primitives but essential</span>
+    <span class="n">String</span> <span class="n">aString</span> <span class="o">=</span> <span class="s">&quot;Hello, World!&quot;</span><span class="p">;</span>   <span class="c1">// wrapper class shortcut assignment</span>
+    <span class="n">String</span> <span class="n">aStringFormal</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="p">(</span><span class="s">&quot;Greetings, World!&quot;</span><span class="p">);</span>
+
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;anInt: &quot;</span> <span class="o">+</span> <span class="n">anInt</span><span class="p">);</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;aDouble: &quot;</span> <span class="o">+</span> <span class="n">aDouble</span><span class="p">);</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;aBoolean: &quot;</span> <span class="o">+</span> <span class="n">aBoolean</span><span class="p">);</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;aString: &quot;</span> <span class="o">+</span> <span class="n">aString</span><span class="p">);</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;aStringFormal: &quot;</span> <span class="o">+</span> <span class="n">aStringFormal</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">DefinePrimitives</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -200,16 +198,6 @@ aStringFormal: Greetings, World!
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>anInt: formatting </li>
-<li>Primitive types are lowercase, wrapper is uppercase</li>
-</ul>
-
-</div>
-</div>
-</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -277,20 +265,98 @@ aStringFormal: Greetings, World!
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
+</div>
+    
 
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Enter an integer: 4
-Enter a double: 2.0
-Enter a boolean: Not an boolean (true or false), java.util.InputMismatchException
-Enter a String: 3
-</pre>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="-"> <a class="anchor-link" href="#-"> </a></h2>
 </div>
 </div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// Java program for simple calculator</span>
+
+<span class="kn">import</span> <span class="nn">java.lang.Math</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">BasicCalculator</span> <span class="p">{</span>
+
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="c1">// taking two numbers</span>
+		<span class="kt">double</span> <span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">;</span>
+
+		<span class="c1">// user input</span>
+		<span class="n">Scanner</span> <span class="n">sc</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+
+		<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Enter the numbers&quot;</span><span class="p">);</span>
+
+		<span class="c1">// take the inputs</span>
+		<span class="n">num1</span> <span class="o">=</span> <span class="n">sc</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
+
+		<span class="n">num2</span> <span class="o">=</span> <span class="n">sc</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
+
+		<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Enter the operator (+,-,*,/)&quot;</span><span class="p">);</span>
+
+		<span class="kt">char</span> <span class="n">op</span> <span class="o">=</span> <span class="n">sc</span><span class="p">.</span><span class="na">next</span><span class="p">().</span><span class="na">charAt</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+
+		<span class="kt">double</span> <span class="n">o</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+		<span class="k">switch</span> <span class="p">(</span><span class="n">op</span><span class="p">)</span> <span class="p">{</span>
+
+		<span class="c1">// case to add two numbers</span>
+		<span class="k">case</span> <span class="sc">&#39;+&#39;</span><span class="p">:</span>
+
+			<span class="n">o</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span><span class="p">;</span>
+
+			<span class="k">break</span><span class="p">;</span>
+
+		<span class="c1">// case to subtract two numbers</span>
+		<span class="k">case</span> <span class="sc">&#39;-&#39;</span><span class="p">:</span>
+
+			<span class="n">o</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">-</span> <span class="n">num2</span><span class="p">;</span>
+
+			<span class="k">break</span><span class="p">;</span>
+
+		<span class="c1">// case to multiply two numbers</span>
+		<span class="k">case</span> <span class="sc">&#39;*&#39;</span><span class="p">:</span>
+
+			<span class="n">o</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">*</span> <span class="n">num2</span><span class="p">;</span>
+
+			<span class="k">break</span><span class="p">;</span>
+
+		<span class="c1">// case to divide two numbers</span>
+		<span class="k">case</span> <span class="sc">&#39;/&#39;</span><span class="p">:</span>
+
+			<span class="n">o</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">/</span> <span class="n">num2</span><span class="p">;</span>
+
+			<span class="k">break</span><span class="p">;</span>
+
+<span class="nl">		default:</span>
+
+			<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You enter wrong input&quot;</span><span class="p">);</span>
+
+			<span class="k">break</span><span class="p">;</span>
+		<span class="p">}</span>
+
+		<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;The final result:&quot;</span><span class="p">);</span>
+
+		<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
+
+		<span class="c1">// print the final result</span>
+		<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num1</span> <span class="o">+</span> <span class="s">&quot; &quot;</span> <span class="o">+</span> <span class="n">op</span> <span class="o">+</span> <span class="s">&quot; &quot;</span> <span class="o">+</span> <span class="n">num2</span>
+						<span class="o">+</span> <span class="s">&quot; = &quot;</span> <span class="o">+</span> <span class="n">o</span><span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 
