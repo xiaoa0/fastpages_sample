@@ -105,6 +105,17 @@
 
   
       ,"page2": {
+          "title": "CB notes",
+          "content": "Week Subject Notes . 1 | Primitives | Java notes + function | . 0 | Setup | Anatomy of Java | .",
+          "url": "https://xiaoa0.github.io/fastpages_test/cb/",
+          "relUrl": "/cb/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page3": {
           "title": "",
           "content": "Hello! . This is an html page running with fastpages. .",
           "url": "https://xiaoa0.github.io/fastpages_test/hello.html",
@@ -136,7 +147,7 @@
   
 
   
-      ,"page11": {
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://xiaoa0.github.io/fastpages_test/robots.txt",
