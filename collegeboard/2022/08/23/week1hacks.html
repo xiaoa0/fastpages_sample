@@ -265,12 +265,29 @@ aStringFormal: Greetings, World!
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Enter an integer: Not an integer (form like 159), java.util.InputMismatchException
+Enter a double: 22.2
+Enter a boolean: false
+Enter a String: Hello World
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="-"> <a class="anchor-link" href="#-"> </a></h2>
+<h2 id="Calculator-function">Calculator function<a class="anchor-link" href="#Calculator-function"> </a></h2>
 </div>
 </div>
 </div>
@@ -282,21 +299,20 @@ aStringFormal: Greetings, World!
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
-
-<span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
+<span class="c1">// uses scanner to take input</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Calculator</span><span class="p">{</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-
+    <span class="c1">//setting variables</span>
     <span class="kt">char</span> <span class="n">operator</span><span class="p">;</span>
     <span class="n">Double</span> <span class="n">number1</span><span class="p">,</span> <span class="n">number2</span><span class="p">,</span> <span class="n">result</span><span class="p">;</span>
 
     <span class="c1">// create an object of Scanner class</span>
     <span class="n">Scanner</span> <span class="n">input</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
 
-    <span class="c1">// ask users to enter operator</span>
+    <span class="c1">// taking user input</span>
     <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Choose an operator: +, -, *, or /&quot;</span><span class="p">);</span>
     <span class="n">operator</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">next</span><span class="p">().</span><span class="na">charAt</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
 
-    <span class="c1">// ask users to enter numbers</span>
     <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Enter first number&quot;</span><span class="p">);</span>
     <span class="n">number1</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
 
@@ -304,32 +320,31 @@ aStringFormal: Greetings, World!
     <span class="n">number2</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
 
     <span class="k">switch</span> <span class="p">(</span><span class="n">operator</span><span class="p">)</span> <span class="p">{</span>
-
-      <span class="c1">// performs addition between numbers</span>
+      <span class="c1">// addition</span>
       <span class="k">case</span> <span class="sc">&#39;+&#39;</span><span class="p">:</span>
         <span class="n">result</span> <span class="o">=</span> <span class="n">number1</span> <span class="o">+</span> <span class="n">number2</span><span class="p">;</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">number1</span> <span class="o">+</span> <span class="s">&quot; + &quot;</span> <span class="o">+</span> <span class="n">number2</span> <span class="o">+</span> <span class="s">&quot; = &quot;</span> <span class="o">+</span> <span class="n">result</span><span class="p">);</span>
         <span class="k">break</span><span class="p">;</span>
 
-      <span class="c1">// performs subtraction between numbers</span>
+      <span class="c1">// subtraction</span>
       <span class="k">case</span> <span class="sc">&#39;-&#39;</span><span class="p">:</span>
         <span class="n">result</span> <span class="o">=</span> <span class="n">number1</span> <span class="o">-</span> <span class="n">number2</span><span class="p">;</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">number1</span> <span class="o">+</span> <span class="s">&quot; - &quot;</span> <span class="o">+</span> <span class="n">number2</span> <span class="o">+</span> <span class="s">&quot; = &quot;</span> <span class="o">+</span> <span class="n">result</span><span class="p">);</span>
         <span class="k">break</span><span class="p">;</span>
 
-      <span class="c1">// performs multiplication between numbers</span>
+      <span class="c1">// multiplication</span>
       <span class="k">case</span> <span class="sc">&#39;*&#39;</span><span class="p">:</span>
         <span class="n">result</span> <span class="o">=</span> <span class="n">number1</span> <span class="o">*</span> <span class="n">number2</span><span class="p">;</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">number1</span> <span class="o">+</span> <span class="s">&quot; * &quot;</span> <span class="o">+</span> <span class="n">number2</span> <span class="o">+</span> <span class="s">&quot; = &quot;</span> <span class="o">+</span> <span class="n">result</span><span class="p">);</span>
         <span class="k">break</span><span class="p">;</span>
 
-      <span class="c1">// performs division between numbers</span>
+      <span class="c1">// division</span>
       <span class="k">case</span> <span class="sc">&#39;/&#39;</span><span class="p">:</span>
         <span class="n">result</span> <span class="o">=</span> <span class="n">number1</span> <span class="o">/</span> <span class="n">number2</span><span class="p">;</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">number1</span> <span class="o">+</span> <span class="s">&quot; / &quot;</span> <span class="o">+</span> <span class="n">number2</span> <span class="o">+</span> <span class="s">&quot; = &quot;</span> <span class="o">+</span> <span class="n">result</span><span class="p">);</span>
         <span class="k">break</span><span class="p">;</span>
-
-<span class="nl">      default:</span>
+      <span class="c1">// error handling</span>
+      <span class="k">default</span><span class="p">:</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Invalid operator!&quot;</span><span class="p">);</span>
         <span class="k">break</span><span class="p">;</span>
     <span class="p">}</span>
@@ -337,9 +352,28 @@ aStringFormal: Greetings, World!
     <span class="n">input</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
   <span class="p">}</span>
 <span class="p">}</span>
+<span class="c1">// calling function</span>
+<span class="n">Calculator</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Choose an operator: +, -, *, or /
+Enter first number
+Enter second number
+25.0 / 3.0 = 8.333333333333334
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
