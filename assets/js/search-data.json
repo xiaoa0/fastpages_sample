@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Bash prereqs",
-            "content": "jupyter kernelspec list java --version javac --version conda --version conda list conda list | grep &quot;jupyter&quot; .",
+            "content": "jupyter kernelspec list java --version javac --version conda --version conda list . Failed to start the Kernel. AttributeError: module &#39;pexpect&#39; has no attribute &#39;spawn&#39;. View Jupyter &lt;a href=&#39;command:jupyter.viewOutput&#39;&gt;log&lt;/a&gt; for further details. .",
             "url": "https://xiaoa0.github.io/fastpages_test/jupyter/2022/08/28/bashcheck.html",
             "relUrl": "/jupyter/2022/08/28/bashcheck.html",
             "date": " • Aug 28, 2022"
