@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      4 min read
     
 </span></p>
 
@@ -242,10 +242,50 @@ Congrats! You&#39;ve worked hard to reach that A, but don&#39;t forget that it&#
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="De-Morgan's-Law">De Morgan's Law<a class="anchor-link" href="#De-Morgan's-Law"> </a></h3>
+<h3 id="De-Morgan's-Laws">De Morgan's Laws<a class="anchor-link" href="#De-Morgan's-Laws"> </a></h3><p>De Morgan's laws states that "the negation of a disjunction is the conjunction of the negations", and vice versa. Essentially, if a true/false statement uses "not(X or Y)", then it would be equivalent to "not(X) AND not(Y)". If the original statement in parentheses was "X and Y", then the "AND" in the interpretation would be switched to "or".</p>
+
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kt">boolean</span> <span class="n">x</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="kt">boolean</span> <span class="n">y</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+
+<span class="cm">/* the statement is going to print based on the condition that ((NOT(x)) and (NOT(y)) is true. It demonstrates that De Morgan&#39;s laws</span>
+<span class="cm">are valid because the operator is equivalent to NOT(x or y), which also evaluates to true. */</span> 
+ <span class="k">this</span> <span class="n">statement</span> <span class="n">is</span> <span class="n">going</span> <span class="n">to</span> <span class="n">print</span> <span class="nf">if</span> <span class="p">((</span><span class="n">NOT</span><span class="p">(</span><span class="n">X</span><span class="p">))</span> <span class="n">or</span> <span class="p">(</span><span class="n">NOT</span><span class="p">(</span><span class="n">Y</span><span class="p">)))</span> <span class="n">is</span> <span class="kc">true</span><span class="p">,</span> <span class="n">which</span> <span class="n">it</span> <span class="n">should</span> <span class="n">be</span><span class="p">.</span> <span class="n">Therefore</span> 
+<span class="nf">if</span> <span class="p">((</span><span class="o">!</span><span class="n">x</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="o">!</span><span class="n">y</span><span class="p">))</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;If you&#39;re seeing this, then it means De Morgan&#39;s laws are valid.&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>If you&#39;re seeing this, then it means De Morgan&#39;s laws are valid.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
