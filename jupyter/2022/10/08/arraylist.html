@@ -132,6 +132,13 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Basics">Basics<a class="anchor-link" href="#Basics"> </a></h3><p>After importing the package, I'm creating an arraylist of String type called "math". I'm adding two lists to math, "basic" and "advanced". Basic has the 4 basic math operations (add, subtract, multiply, divide) while advanced has more complex ones such as square roots and exponents. I'm using "math.addAll();" to add both lists to the ArrayList, then printing it as the original.</p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -139,35 +146,26 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="p">;</span>
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="p">;</span> <span class="c1">// import package</span>
 
-<span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">math</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">math</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="p">();</span> <span class="c1">// new arraylist</span>
 
-<span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">basic</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">basic</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="p">();</span> <span class="c1">// 2 lists to be added to arraylist</span>
 <span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">advanced</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="p">();</span>
 
-<span class="n">basic</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;addition&quot;</span><span class="p">);</span>
+<span class="n">basic</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;addition&quot;</span><span class="p">);</span> <span class="c1">// adding these items to basic list</span>
 <span class="n">basic</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;subtraction&quot;</span><span class="p">);</span>
 <span class="n">basic</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;multiplication&quot;</span><span class="p">);</span>
 <span class="n">basic</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;division&quot;</span><span class="p">);</span>
 
-<span class="n">advanced</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;square root&quot;</span><span class="p">);</span> 
+<span class="n">advanced</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;square root&quot;</span><span class="p">);</span> <span class="c1">// adding to advanced list</span>
 <span class="n">advanced</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;exponent&quot;</span><span class="p">);</span>
 <span class="n">advanced</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;logarithm&quot;</span><span class="p">);</span>
 
 <span class="n">math</span><span class="p">.</span><span class="na">addAll</span><span class="p">(</span><span class="n">basic</span><span class="p">);</span>
-<span class="n">math</span><span class="p">.</span><span class="na">addAll</span><span class="p">(</span><span class="n">advanced</span><span class="p">);</span> <span class="c1">// add objects and clothes arrays to listings</span>
+<span class="n">math</span><span class="p">.</span><span class="na">addAll</span><span class="p">(</span><span class="n">advanced</span><span class="p">);</span> <span class="c1">// adding 2 lists to math</span>
 
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Original: &quot;</span> <span class="o">+</span> <span class="n">math</span><span class="p">);</span> <span class="c1">// listings has content from both clothes and objects</span>
-
-<span class="n">math</span><span class="p">.</span><span class="na">removeAll</span><span class="p">(</span><span class="n">advanced</span><span class="p">);</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Basics: &quot;</span> <span class="o">+</span> <span class="n">math</span><span class="p">);</span>
-
-<span class="n">math</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Remove last element: &quot;</span> <span class="o">+</span> <span class="n">math</span><span class="p">);</span>
-
-<span class="n">math</span><span class="p">.</span><span class="na">clear</span><span class="p">();</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Cleared: &quot;</span> <span class="o">+</span> <span class="n">math</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Original: &quot;</span> <span class="o">+</span> <span class="n">math</span><span class="p">);</span> <span class="c1">// math has all items from both</span>
 </pre></div>
 
     </div>
@@ -181,9 +179,123 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Original: [addition, subtraction, multiplication, division, square root, exponent, logarithm]
-Basics: [addition, subtraction, multiplication, division]
-Remove last element: [addition, subtraction, multiplication]
-Cleared: []
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Modifying">Modifying<a class="anchor-link" href="#Modifying"> </a></h1><p>I used the removeAll for the advanced list to show which operations the abacus can't do, and printed the new list as basic operations.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="n">math</span><span class="p">.</span><span class="na">removeAll</span><span class="p">(</span><span class="n">advanced</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Basics: &quot;</span> <span class="o">+</span> <span class="n">math</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Basics: [addition, subtraction, multiplication, division]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Removing the last element (number 3) from the arraylist and printing it</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="n">math</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Remove last element: &quot;</span> <span class="o">+</span> <span class="n">math</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Remove last element: [addition, subtraction, multiplication]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Removing all items from the array so it is now empty</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="n">math</span><span class="p">.</span><span class="na">clear</span><span class="p">();</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Cleared: &quot;</span> <span class="o">+</span> <span class="n">math</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Cleared: []
 </pre>
 </div>
 </div>
